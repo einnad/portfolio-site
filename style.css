@@ -24,7 +24,18 @@ h1 {
   font-style: italic;
 }
 
-.about {
-  background-color: white;
-  padding: 50px;
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
