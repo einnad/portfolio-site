@@ -45,17 +45,24 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: 200px;
+  border: dotted #116a7b;
 }
 
 .about {
   background-color: #c2dedc;
   padding: 100px 50px;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .info {
-  margin: 100px;
+  margin-top: 100px;
   display: grid;
   gap: 10px;
   width: 80%;
@@ -68,9 +75,67 @@ h1 {
   background-color: #c2dedc;
   padding: 30px;
   border-radius: 10px;
+  border: dotted #116a7b;
 }
 
 .cred-title {
   font-weight: 900;
   font-size: 24px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.facts-header {
+  display: flex;
+  padding: 100px 50px 0px 50px;
+  justify-content: space-around;
+}
+
+.facts {
+  padding: 100px;
+  width: 80%;
+  height: 400px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.facts > * {
+  background-color: #c2dedc;
+  border: dotted #116a7b;
+  border-radius: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.one {
+  grid-column: span 2;
+}
+
+.two {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.three {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.four {
+  grid-area: 4 / 2 / 5 / 4;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px;
+  background-color: #c2dedc;
 }
